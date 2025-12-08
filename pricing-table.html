@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>pricing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #090D2E;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            color: #CBD5E0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 2rem;
+
+            h1 {
+                font-size: 4rem;
+                text-align: center;
+            }
+        }
+
+        .cards-container{
+            display: flex;
+            justify-content: center;
+            gap: 0 2rem;
+            padding: 2rem;
+        
+        }
+        .card{
+            background: linear-gradient(180deg, #060B26 0%, #0F123B 50%, #090D2E 100%);
+            outline: 1px solid hsl(239, 38%, 51%);
+            border-radius: 24px;
+            padding: 1rem 1.5rem;
+            width: 25%;
+        }
+        .card-header{
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: #2CD9FF 1px 1px 80px;
+            padding: 1rem 0;
+        }
+        .card-description{
+            font-size: 0.9rem;
+            color: hsla(231, 76%, 95%, 0.9);
+        }
+        .price{
+            font-size:4rem;
+            font-weight: 900;
+            display: flex;
+            #dollar-sign{
+                font-size: 2rem;
+                color: #4FD1C5;
+            }
+        }
+        .cta{
+            button{
+                color: hsla(231, 76%, 95%, 0.9);
+                width: 100%;
+                background-color: #2D3748;
+                border: 1px solid hsla(191, 100%, 95% , 0.5);
+                border-radius: 1000px;
+                padding: 0.5rem 0;
+                cursor: pointer;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>
+            Choose your plan
+        </h1>
+        <div class="cards-container">
+            <div class="card">
+                <p class="card-header">Basic</p>
+                <p class="card-description">For personal use and exploration on AI technology </p>
+                <p class="price">
+                    <span id="dollar-sign" >$</span>
+                    <span>0</span>
+                </p>
+                <div class="cta">
+                    <button>
+                        Get started
+                    </button>
+                </div>
+                <div class="benefits">
+                    <p>100 request per day </p>
+                    <p>Free trial features access</p>
+                    <p>limited API access</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <p class="card-header">Standard</p>
+                <p class="card-description">Perfect for professionals and small businesses in need of significant Ai integration  </p>
+                <p class="price">
+                    <span id="dollar-sign" >$</span>
+                    <span>9.99</span>
+                </p>
+                <div class="cta">
+                    <button>
+                        Get started
+                    </button>
+                </div>
+                <div class="benefits">
+                    <p>Unlimited AI generation </p>
+                    <p>Full new features access</p>
+                    <p>Priority support</p>
+                </div>
+            </div>
+
+               <div class="card">
+                <p class="card-header">Premium</p>
+                <p class="card-description">Perfect for large businesses or organizations that require specialized support</p>
+                <p class="price">
+                    <span id="dollar-sign" >$</span>
+                    <span>29.99</span>
+                </p>
+                <div class="cta">
+                    <button>
+                        Get started
+                    </button>
+                </div>
+                <div class="benefits">
+                    <p>Custom deployment </p>
+                    <p>Comprehensive usage data</p>
+                    <p>Training specialized models</p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>

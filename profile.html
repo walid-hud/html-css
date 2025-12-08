@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;   
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-container{
+            display: flex;
+            gap: 1rem;
+            img{
+                width: 5rem;
+                border-radius: 100%;
+                filter: grayscale();
+            }
+            .user-details{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                div{
+                    line-height: 0%;
+                    display: flex;
+                    gap: 4rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    .role{
+                        outline: 1px solid #710000;
+                        padding: 4px;
+                        border-radius: 100px;
+                        font-size: 0.7rem;
+                        color: #c9c9c9;
+                        background: #300101;
+                        line-height: 1;
+                        min-width: 4rem;
+                        text-align: center;
+                    }
+                }
+                .description{
+                    font-size: small;
+                    opacity: 0.8;
+                }
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="img">
+            <img src="https://th.bing.com/th/id/R.f21d60e8ce00bedd8e51df690a29c4dd?rik=mPVzdmbSZSyiGA&pid=ImgRaw&r=0" alt="Brendan Eich">
+        </div>
+        <div class="user-details">
+        <div>
+            <p class="username">
+                Brendan Eich
+            </p>
+            <p class="role">
+                admin
+            </p>
+        </div>
+            <div class="description">
+                <p>Created Javascript in 10 days</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
