@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            background-color: #1A1F37;
+            color: hsl(230, 36%, 96%);
+        }
+        nav{
+            padding: 0.5rem 1rem;
+            p{
+                font: 600;
+                font-size: 3rem;
+            }
+        }
+        .img-container{
+            /* 
+            The challenge said to use grid, but I find it easier to do this instead + achieving the same
+            layout with grid requires some hacks using javascript
+            */
+            columns: 300px 4;            
+            img{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 1rem;
+                padding: 0.2rem 0;
+                box-shadow: 5px 5px 10px  hsla(227, 36%, 15%, 0.6);
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <div>
+                <p>
+                    PIN
+                </p>
+            </div>
+        </nav>
+        <section class="img-container">
+        </section>
+    </main>
+    <script src="./img-gallery.js"></script>
+</body>
+</html>
