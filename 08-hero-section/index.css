@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+    font-family: "stranger-things";
+    src: url("./fonts/Stranger_Things.woff") format("woff");
+}
+
+:root {
+    --color-orange: #ec763e;
+    --color-red: #d73222;
+    --color-dark-red: #a42e4b;
+    --color-light-blue: #3e3668;
+    --color-dark-blue: #091946;
+    --color-light: hsl(224, 77%, 95%);
+    --color-dark: hsl(224, 77%, 5%);
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --font-st: "stranger-things", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+body {
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    background-color: var(--color-dark);
+    min-height: 100dvh;
+    color: var(--color-light);
+}
+
+main {
+    width: 100%;
+    min-height: 100dvh;
+}
+
+#styling-blob-1,
+#styling-blob-2 {
+    z-index: -1;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    filter:
+        blur(200px) contrast(12);
+}
+
+#styling-blob-1 {
+    top: 20%;
+    left: 0;
+    background: linear-gradient(to left top,
+            var(--color-dark-red),
+            var(--color-orange));
+}
+
+#styling-blob-2 {
+    bottom: 20%;
+    right: 0;
+    background: linear-gradient(to right bottom,
+            var(--color-dark-blue),
+            hsl(224, 77%, 55%),
+            var(--color-red));
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    img {
+        width: 3rem;
+        height: auto;
+        filter: invert();
+    }
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 0 2rem;
+    width: 100%;
+    font-size: 0.9rem;
+
+    a:hover {
+        color: var(--color-dark-red);
+    }
+}
+
+.cart {
+    svg {
+        fill: var(--color-light);
+        width: 1.5rem;
+        height: auto;
+    }
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .hero-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+
+        .converse {
+            color: var(--color-light);
+        }
+
+        .separator {
+            font-weight: 100;
+        }
+
+        .stranger-things {
+            text-align: center;
+            padding-top: 1rem;
+            line-height: 0.8;
+            font-family: var(--font-st);
+            color: var(--color-red);
+        }
+    }
+
+    .hero-img-layers{
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: center ;
+        position: relative;
+    }
+    .hero-img-layer{
+        transition: all 300ms ease-in-out;
+        left:1rem;
+        top: 0;
+        position: absolute;
+        height: 300px;
+        width: 550px;
+        background-image: url("./erasebg-transformed.webp");
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+    .hero-img-layer[data-layer="0"]{
+        z-index: 10;
+    }
+/
+}
