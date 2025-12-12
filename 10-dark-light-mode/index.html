@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --bg: #fff;
+    --fg: #000;
+  }
+  
+  :root:has(#toggle:checked) {
+    --bg: #111;
+    --fg: #eee;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    transition: 0.3s;
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+
+  label {
+    padding: .5rem 1rem;
+    background: var(--fg);
+    color: var(--bg);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  #toggle { 
+    display: none; 
+  }
+  pre{
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="toggle">
+<label for="toggle">Toggle Theme</label>
+
+<pre>
+Doesn't always have to be so black and white
+Pull the wool over my eyes one last time
+One last time
+</pre>
+
+</body>
+</html>
